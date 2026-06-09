@@ -19,10 +19,22 @@ while (compteur > 0) {
     console.log(compteur);
 }
 
-prenom = "Thomas";
+let prenom = "Thomas";
 function direBonjour(prenom) {
-    console.log("Bonjour " + prenom + " !");
+    console.log("Bonjour, " + prenom + " !");
 }
-
 direBonjour(prenom);
 
+let nombre = 6;
+function carreNombre(nombre) {
+    nombre *= nombre;
+    return nombre;
+}
+result = carreNombre(nombre);
+console.log(result);
+
+const calculSurface = (longueur,largeur) => {
+    let surface = longueur * largeur;
+    return surface;
+}
+console.log(calculSurface(13,17));
